@@ -66,6 +66,30 @@ nav li a:hover {
   background-color: #F64B37;
 }
 
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 14px;
+}
+
+ul.breadcrumb li a {
+  color: black;
+}
+
+ul.breadcrumb li a:hover {
+  color: #F64B37;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 1px;
+  color: black;
+  content: "-";
+}
+
 form {
   margin-left: 50px;
   width: 60%;

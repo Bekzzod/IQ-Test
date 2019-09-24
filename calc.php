@@ -9,7 +9,11 @@
 
   function capitalization($date)
   {
-    if (date <= $response['depositDate']) {
+    $diff = abs(strtotime($date1) - strtotime($response['depositDate']));
+    $years = floor($diff / (365*60*60*24));
+    $months = floor(($diff - $years * 365*60*60*24) / (30*60*60*24));
+
+    if ($months <= 1) {
       return $response['depositAmount'];
     } else {
       $month = getMonth($date);

@@ -29,6 +29,11 @@
       <li><a href="">Интернет-банк</a></li>
     </ul>
   </nav>
+  <ul class="breadcrumb">
+    <li><a href="#">Главная</a></li>
+    <li><a href="#">Вклады</a></li>
+    <li>Калькулятор</li>
+  </ul>
   <div>
     <form action="./calc.php" method="POST">
       <h1>Калькулятор</h1>
