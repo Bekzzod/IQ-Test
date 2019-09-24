@@ -97,9 +97,8 @@ ul.breadcrumb li a:hover {
 }
 
 ul.breadcrumb li+li:before {
-  padding: 1px;
   color: black;
-  content: "-";
+  content: " - ";
 }
 
 
@@ -152,6 +151,12 @@ input[type=submit] {
   background: 1px solid white;
 }
 
+#result {
+  position: relative;;
+  bottom: 57px;
+  left: 50px;
+  text-align: right;
+}
 
 /* Footer */
 

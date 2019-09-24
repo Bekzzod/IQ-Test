@@ -45,7 +45,7 @@ $(document).ready(function() {
         },
         success: function(response){
           console.log(response);
-          $('#result').val('Результат: ' + response);
+          document.getElementById('result').innerText = 'Результат: ' + response + ' руб.';
         },
         error: function(err) {
           console.log(err);
