@@ -3,6 +3,10 @@ body {
   margin: 10px 5px 0px 5px;
 }
 
+
+/* Header */
+
+
 header {
   overflow: hidden;
   margin-bottom: 10px;
@@ -27,6 +31,10 @@ header .numbers a {
   color: #F64B37;
   font-size: 30px;
 }
+
+
+/* Navigation */
+
 
 nav, footer {
   background-color: #231F20;
@@ -66,6 +74,10 @@ nav li a:hover {
   background-color: #F64B37;
 }
 
+
+/* Breadcrumbs */
+
+
 ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
@@ -90,7 +102,13 @@ ul.breadcrumb li+li:before {
   content: "-";
 }
 
+
+/* Calculator */
+
+
 form {
+  display: flex;
+  flex-direction: column;
   margin-left: 50px;
   width: 60%;
   background-color: #F2F2F2;
@@ -131,7 +149,12 @@ input[type=submit] {
   font-weight: 600;
   background: linear-gradient(#B9EF35, #81C800);;
   color: #2D5000;
+  background: 1px solid white;
 }
+
+
+/* Footer */
+
 
 footer {
   height: 10%;

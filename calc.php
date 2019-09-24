@@ -1,4 +1,5 @@
 <?php 
+  //Get POST data
   $response['depositDate'] = $_POST['depositDate'];
   $response['depositAmount'] = $_POST['depositAmount'];
   $response['depositTerm'] = $_POST['depositTerm'];
@@ -7,6 +8,7 @@
   $response['depositReplenishmentAmount'] = $_POST['depositReplenishmentAmount'];
   $today = date('Y-m-d');
 
+  //Capitalization recursive function
   function capitalization($date)
   {
     $diff = abs(strtotime($date1) - strtotime($response['depositDate']));
@@ -34,16 +36,19 @@
     }
   }
 
+  //get Year from date
   function getYear($pdate) {
     $date = DateTime::createFromFormat("Y-m-d", $pdate);
     return $date->format("Y");
   }
 
+  //get month from date
   function getMonth($pdate) {
     $date = DateTime::createFromFormat("Y-m-d", $pdate);
     return $date->format("m");
   }
 
+  //get day from date
   function getDay($pdate) {
       $date = DateTime::createFromFormat("Y-m-d", $pdate);
       return $date->format("d");
@@ -51,5 +56,5 @@
 
   $sum = capitalization($today);
 
-  echo $sum;
+  echo json_encode($sum);
 ?>

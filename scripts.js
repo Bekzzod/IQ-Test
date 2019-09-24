@@ -1,3 +1,12 @@
+/*
+$(function(){
+  $("#depositDate").datepicker();
+});
+*/
+
+
+// Input[type=range] sync with Input[type=number]
+
 function updateDepositAmountTextInput(val) {
   document.getElementById('depositAmount').value=val; 
 }
@@ -11,6 +20,9 @@ function updateDepositReplenishmentAmountTextInput(val) {
 function updateDepositReplenishmentAmountSliderInput(val) {
   document.getElementById('depositReplenishmentAmountSlider').value=val; 
 }
+
+
+// Ajax query
 
 $(document).ready(function() {
   $('#submitBut').click(function(e) {
@@ -32,7 +44,8 @@ $(document).ready(function() {
           depositReplenishmentAmount: $("#depositReplenishmentAmount").val(),
         },
         success: function(response){
-          console.log( response );
+          console.log(response);
+          $('#result').val('Результат: ' + response);
         },
         error: function(err) {
           console.log(err);

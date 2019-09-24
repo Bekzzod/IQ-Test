@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="jquery-ui.css">
 </head>
 <body>
+
+  <!-- Header -->
+
   <header>
     <div class="logo"> 
       <img src="./images/Лого.png" />
@@ -19,6 +22,9 @@
       <a href="tel:+7(3452)-522-000">+7(3452)-522-000</a>
     </div>
   </header>
+
+    <!-- Navigation -->
+
   <nav>
     <ul>
       <li><a href="">Кредитные карты</a></li>
@@ -29,11 +35,17 @@
       <li><a href="">Интернет-банк</a></li>
     </ul>
   </nav>
+
+  <!-- Breadcrumbs -->
+
   <ul class="breadcrumb">
     <li><a href="#">Главная</a></li>
     <li><a href="#">Вклады</a></li>
     <li>Калькулятор</li>
   </ul>
+
+  <!-- Calculator -->
+
   <div>
     <form action="./calc.php" method="POST">
       <h1>Калькулятор</h1>
@@ -96,9 +108,12 @@
         />
       </div>
       <input type="submit" id="submitBut" value="Рассчитать">
-      <label id="result">Результат: </label>
+      <label id="result"></label>
     </form>
   </div>
+
+  <!-- Footer -->
+  
   <footer>
     <ul>
       <li><a href="">Кредитные карты</a></li>
